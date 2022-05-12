@@ -18,3 +18,20 @@
 #content-grid > div :hover{
   background-color: #f4f5f6;
 }
+
+@media(max-width:1000px){
+  #content-grid{
+    display:grid;
+    grid-template-columns: 100%;
+  }
+
+  #content-grid > div {
+    height:100px;
+  }
+
+  #content-grid > div > a {
+    padding-top: 45px;
+    padding-bottom: 45px;
+  }
+
+}

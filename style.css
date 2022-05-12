@@ -62,3 +62,23 @@ li a:hover{
   padding-top: 30px;
   padding-bottom: 30px;
 }
+
+@media(max-width:1000px){
+  #outer-grid{
+    display: grid;
+    grid-template-columns: 0% 100% 0%;
+  }
+
+  h1{
+    font-size: 4vw;
+    margin: 5%;
+  }
+
+  li a{
+    padding-top : 10px;
+    padding-bottom : 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+}
