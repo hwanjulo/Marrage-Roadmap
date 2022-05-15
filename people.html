@@ -42,10 +42,34 @@
       <!--메뉴 종료-->
 
       <!--content-grid 시작-->
-        <div id="content-grid">
-          <div><a>하객 추가</a></div>
-          <div><a>하객관리 내용</a></div>
+      <div id="content-grid">
+        <div id="leftsection">
+          <div>
+          <h4 class="contentheader">하객 관리</h4>
+          </div>
+          <div>
+            <input type="button" value="삭제" id="tools" name="linedelete"  onclick="alert('클릭')"></input>
+            <input type="button" value="내보내기" id="tools" name="export"  onclick="alert('클릭')"></input>
+          </div>
         </div>
+
+        <div id="rightsection">
+          <div>
+          <h4 class="contentheader">하객 추가</h4>
+          </div>
+          <div>
+            <label for="stype">유형 : </label><input type="text" id="stype" name="stype"></input><br>
+            <label for="ssubject">누가 : </label><input type="text" id="ssubject" name="ssubject"></input><br>
+            <label for="schedule">일시 : </label><input type="datetime-local" id="schedule" name="schedule"></input><br>
+            <label for="venue">장소 : </label><input type="text" id="venue" name="venue"></input><br>
+
+            <div>
+              <input type="button" value="저장" id="tools" name="save"  onclick="alert('클릭')"></input>
+            </div>
+          </div>
+        </div>
+
+      </div>
       <!--content-grid 종료-->
 
       <!--푸터 시작-->
